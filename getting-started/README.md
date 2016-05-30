@@ -9,24 +9,24 @@ Steps
 
 2. Clone the spring-mvc project repository
 
-`git clone https://github.com/pivotal-cf-workshop/prebuilt-spring-mvc-app`
+  `git clone https://github.com/pivotal-cf-workshop/prebuilt-spring-mvc-app`
 
 3. Using the CLI login to PWS using the user name and password for your cloud foundry account
  
-`cf login -a api.run.pivotal.io`
+  `cf login -a api.run.pivotal.io`
  
-Follow prompts to supply user name and password
+  Follow prompts to supply user name and password
  
 4. Using the CLI push the built application
  
-> cf push <app-name> -p dist/cf-workshop-spring-mvc-0.1.war
+  `cf push <app-name> -p dist/cf-workshop-spring-mvc-0.1.war`
  
-Your app-name should be:
-<first_initial><last_name>-CFW (e.g “jsmith-CFW”)
+  Your app-name should be:
+  <first_initial><last_name>-CFW (e.g “jsmith-CFW”)
  
 5. After application deploys and starts open a browser and navigate to the application.  The path to the application is supplied in the “urls” parameter similar to the following:
 
-![Sample Output](/images/deploy-output.png)
+  ![Sample Output](images/deploy-output.png)
  
 6. Now we will deploy a Ruby on Rails application.  First, we will create a new directory, then change to it:
 
@@ -53,6 +53,6 @@ Your app-name should be:
 
 11.  Now view the application in a browser.  The result of the cf push will tell you the URL to use (see the urls parameter).
  
-![GitHub Logo](/images/logo.png)
+![Output from cf push cmd](images/cf-push-output.png)
 
 
