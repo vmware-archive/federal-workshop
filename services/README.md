@@ -63,10 +63,10 @@ Steps
 
 * `cf restart <app_name>`
 
-![restarting PCF app](/images/restart.png)
+![restarting PCF app](images/restart.png)
 
 13. After application restarts open a browser and navigate to the application.  The path to the application is supplied in a message similar to the following: urls: ssmith-CFW.cfapps.io
 
 * Notice the environment variables including the details of the bound service.
 
-![new PCF env](/images/new-env.png)
+![new PCF env](images/new-env.png)
