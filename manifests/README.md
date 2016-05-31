@@ -10,9 +10,7 @@ Goals
 
 * Start application and use service
 
-
 Steps
-
 
 1. Rename the manifest file "manifest.yml" to "new-manifest.yml" (note in Linux the move command “mv” is used to rename files).
 
