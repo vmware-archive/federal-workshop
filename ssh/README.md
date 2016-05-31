@@ -50,7 +50,7 @@ Steps
 
       * `cf app cf-workshop-spring-mvc --guid`
 
-    * Scp the remote file (staging_info.yml) to your host.  
+    * Scp the remote file `staging_info.yml` to your host.  
 
-    * `scp -p 2222 -o User=cf:<app-guid>/0 ssh.run.pivotal.io:staging_info.yml`staging_info.yml`
+      * `scp -p 2222 -o User=cf:<app-guid>/0 ssh.run.pivotal.io:staging_info.yml staging_info.yml`
 
