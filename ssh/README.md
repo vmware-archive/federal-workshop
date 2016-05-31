@@ -32,23 +32,23 @@ Steps
 
     * Check to see if ssh is enabled (it is disabled by default in PWS).
 
-    * `cf ssh-enabled cf-workshop-spring-mvc`
+      * `cf ssh-enabled cf-workshop-spring-mvc`
 
     * Enable ssh
 
-    * `cf ssh-enable cf-workshop-spring-mvc`
+      * `cf ssh-enable cf-workshop-spring-mvc`
 
     * Ssh to the app container via "cf ssh" then exit.
 
-    * `cf ssh cf-workshop-spring-mvc`
+      * `cf ssh cf-workshop-spring-mvc`
 
     * Get a one-time password for ssh
 
-    * `cf ssh-code cf-workshop-spring-mvc`
+      * `cf ssh-code cf-workshop-spring-mvc`
 
     * Get the Global Unique Identifier for your app
 
-    * `cf app cf-workshop-spring-mvc --guid`
+      * `cf app cf-workshop-spring-mvc --guid`
 
     * Scp the remote file (staging_info.yml) to your host.  
 
