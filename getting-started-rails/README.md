@@ -1,6 +1,11 @@
+#Getting Started with Rails and Pivotal Cloud Foundry
+
 Goals
+
 * Create a managed service instance 
+
 * Push application using CLI prompts
+
 * Access deployed applications
  
 Steps

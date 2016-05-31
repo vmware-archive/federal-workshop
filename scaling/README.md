@@ -1,3 +1,5 @@
+#Scaling Apps with Pivotal Cloud Foundry
+
 Goals
 
   * Scale deployed application to multiple instances

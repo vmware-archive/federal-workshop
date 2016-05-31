@@ -1,6 +1,11 @@
+# Getting Started with Java and Pivotal Cloud Foundry
+
 Goals
+
 * Login to PCF environment
+
 * Push applications using CLI prompts
+
 * Access deployed applications
  
 Steps
