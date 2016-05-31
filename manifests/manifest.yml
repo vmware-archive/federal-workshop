@@ -1,0 +1,9 @@
+applications:
+- disk_quota: 1024M
+  domain: cfapps.io
+  host: mdolan-cfw
+  instances: 1
+  memory: 1024M
+  name: cfw
+  stack: cflinuxfs2
+  path: target/cf-workshop-spring-mvc-0.2.war

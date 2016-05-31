@@ -1,73 +1,41 @@
 Goals
-* Deploy Sample Application
-* Access Environmental Variables Page
-* Create service
-* Bind service
-* Start application and use service
+* Scale deployed application to multiple instances
+* Verify application scaling occurred
 
 Steps
 
-1. Ensure that you are working in the spring-mvc directory
+1. Get information about deployed app using CLI command
 
-2. Rename the manifest file "manifest.yml" to "new-manifest.yml" (note in linux the move command “mv” is used to rename files)
-`mv manifest.yml~ new-manifest.yml`
+* `cf apps`
 
-3. Open "new-manifest.yml". Replace "mdolan" with your first initial and last name respectively for both the “name” and “host” configuration entries.
+* Note the deployed application URL (should be your first inital and last name e.g “ssmith-CFW.cfapps.io”)
 
-4. Using the CLI push the built application again using the new manifest file created above.
+![Apps running in PCF](images/cf-apps.png)
 
-`cf push <app-name> -f new-manifest.yml`
+2. Get information about the instances using
 
-5. After application deploys and starts open a browser and navigate to the application.  The path to the application is supplied in a message similar to the following:
-Push successful! App 'ssmith-CFW' available at ssmith-CFW.cfapps.io
+* `cf app <app_name>`
 
-Notice the details environment variables
+* Where <app_name> is the sample app name (e.g. ssmith-CFW)
+
+* You should see only one instance (e.g. instances: 1/1).
+
+![App Details in PCF](images/cf-app.png)
  
+3. Scale the application to 3 instances (“-i 3”) with 512 MB of RAM (“-m 512M”).   Note that the application will be available and “started” as soon as the first instance is running.  Application status can be monitored via the cf CLI or the web console.
 
-6. Get information about deployed app using CLI command
-`cf apps`
-
-7. Use the CLI to list the available services in the marketplace.
-`cf marketplace`
-or the shortened version
-`cf m`
-
+* `cf scale <app_name>  -i 3 –m 512M`
  
-Figure 1: Services available in the CF marketplace
+![App Scaling in PCF](images/cf-scale.png)
 
-8. Create a new database service. Choose the “elephantsql” as the service, “turtle” as the plan and name the Service “CFW-psql”
+4.	Navigate to the app in the browser at http://<first_initial><last_name>-CFW.cfapps.io and click the Kill button
 
-`cf create-service elephantsql turtle CFW-psql`
-
-
-9. Verify the service was created
-
-`cf services`
+![Force Kill an app in PCF](images/cf-kill.png)
  
+5.	Reload the app Home Page http://<<first_initial>><<last_name>>-CFW.cfapps.io
 
-You should see the service you just created listed.  It should not be bound to any applications.
+	You will notice the application port and index have changed from prior load.  Subsequent refreshes will show that instance index will continue to change.
 
-10. Bind the service to the deployed application
-
-`cf bind-service <app_name> CFW-psql`
-
-<app_name> will be the application name returned in step one.
-
-11. Verify the service has been bound to your application.
-
-`cf services`
-
-You should now see the service created in step 3 listed.  The bound application command should show your application.
-
-12. Restart the application to utilize the elephantsql service.
-
-`cf restart <app_name>`
-
-
-13. After application restarts open a browser and navigate to the application.  The path to the application is supplied in a message similar to the following:
-urls: ssmith-CFW.cfapps.io
-
-Notice the environment variables including the details of the bound service.
-
+![PCF recovering the app](images/cf-recover.png)
 
 
