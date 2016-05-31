@@ -39,10 +39,12 @@ Steps
   6. After application restarts open a browser and navigate to the application.  The path to the application is supplied in a message similar to the following: `urls: spring-music-mdolan.cfapps.io`
 
   7. Mouse over the “i" in the header to confirm your service configuration
+
+      ![Confirm Spring Music Datasource](images/header-confirm.png)
  
     * Mousing over will show the connected services (in this case oracle-db)
 
-    * ![Confirm Spring Music Datasource](images/header-confirm.png)
+      ![Confirm Spring Music Datasource](images/datasource-detail.png)
  
   8. Stop your spring music application
 
