@@ -1,4 +1,4 @@
-#Using SSH with Pivotal Cloud Foundry
+#Logging and Troubleshooting
 
 Goals
 
