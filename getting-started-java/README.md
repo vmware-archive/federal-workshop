@@ -18,7 +18,7 @@ Steps
  
 2. Using the CLI push the built application
  
-   * `cf push <app-name> -p dist/cf-workshop-spring-mvc-0.1.war`
+   * `cf push <app-name> -p target/cf-workshop-spring-mvc-0.2.war`
  
    * Your app-name should be: `<first_initial><last_name>-CFW (e.g “jsmith-CFW”)`
  
