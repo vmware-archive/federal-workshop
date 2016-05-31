@@ -32,11 +32,11 @@ Steps
  
     ![App Scaling in PCF](images/cf-scale.png)
 
-  4. Navigate to the app in the browser at http://<first_initial><last_name>-CFW.cfapps.io and click the Kill button
+  4. Navigate to the app in the browser at `http://<first_initial><last_name>-CFW.cfapps.io` and click the Kill button
 
     ![Force Kill an app in PCF](images/cf-kill.png)
  
-  5. Reload the app Home Page `http://<<first_initial>><<last_name>>-CFW.cfapps.io`
+  5. Reload the app Home Page `http://<first_initial><last_name>-CFW.cfapps.io`
 
     * You will notice the application port and index have changed from prior load.  Subsequent refreshes will show that instance index will continue to change.
 

@@ -12,25 +12,17 @@ Steps
 
   1. View the aggregated logs for the application:
 
-    * `cf logs`
+    * `cf logs <app-name>`
 
     * Alternatively, redirect standard out to a file and open in a text viewer for easier reading:
 
-    *  `cf logs > cf-workshop-logs.txt && more cf-workshop-logs.txt`
+    *  `cf logs <app-name> cf-logs.txt && more cf-logs.txt`
 
-  2. Tail the stdout log file to view request processing:
-
-    * `cf tail cf-workshop-spring-mvc /logs/stdout.log`
-
-    * Navigate to the web page and click Attendees, and then Home:
- 
-    * View the tailed log:
-
-  3. View the failure events for the application:
+  2. View the failure events for the application:
 
     * `cf events`
 
-  4. scp the log files to your local filesystem for viewing / archiving:
+  3. scp the log files to your local filesystem for viewing / archiving:
 
     * Check to see if ssh is enabled (it is disabled by default in PWS).
 
