@@ -22,7 +22,7 @@ Steps
 
     * You should see only one instance (e.g. instances: 1/1).
 
-    ![App Details in PCF](images/cf-app.png)
+    ![App Details in PCF](images/cf-app-details.png)
  
   3. Scale the application to 3 instances (“-i 3”) with 512 MB of RAM (“-m 512M”).   Note that the application will be available and “started” as soon as the first instance is running.  Application status can be monitored via the cf CLI or the web console.
 
