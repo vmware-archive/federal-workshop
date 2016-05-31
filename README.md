@@ -4,9 +4,9 @@ This is a very basic developer focused PCF workshop.  We cover pushing Java and 
 
 * [Getting Started with Java](getting-started-java)
 * [Getting Started with Rails](getting-started-rails)
-* [PCF External Services](external-services)
 * [PCF Manifests](manifests)
+* [PCF External Services](external-services)
 * [Scaling Apps with PCF](scaling)
 * [PCF Routing](routing)
-* [SSH with PCF](ssh)
+* [Logging and Troubleshooting](ssh)
 
