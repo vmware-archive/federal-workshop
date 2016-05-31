@@ -1,13 +1,20 @@
 Goals
+
 * Deploy Sample Application
+
 * Access Environmental Variables Page
+
 * Create service
+
 * Bind service
+
 * Start application and use service
+
 
 Steps
 
-1. Rename the manifest file "manifest.yml" to "new-manifest.yml" (note in linux the move command “mv” is used to rename files)
+
+1. Rename the manifest file "manifest.yml" to "new-manifest.yml" (note in Linux the move command “mv” is used to rename files).
 
 * `mv manifest.yml~ new-manifest.yml`
 

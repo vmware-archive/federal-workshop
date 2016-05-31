@@ -7,7 +7,7 @@ Steps
 
 1. Using the CLI login to PWS using the user name and password for your cloud foundry account
  
-  `* cf login -a api.run.pivotal.io`
+   * `cf login -a api.run.pivotal.io`
  
    * Follow prompts to supply user name and password
  
@@ -21,5 +21,4 @@ Steps
 
   ![Sample Output](images/deploy-output.png)
  
-
 

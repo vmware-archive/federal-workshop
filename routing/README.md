@@ -1,6 +1,7 @@
 Goals
 
 * Deploy application
+
 * Map a new URL Subdomain to the application
 
 Steps
@@ -14,6 +15,7 @@ Steps
 2. Map a new URL to the application 
 
 * `cf map-route <app_name> cfapps.io –n <app_name>-new`
+
 * Where <app_name> is the app name recorded in step 1.  
 	
 ![Mapping an app route in PCF](images/cf-map-route.png)
@@ -29,6 +31,7 @@ Steps
 5. Unmap the new URL to the application 
 
 * `cf unmap-route <app_name> cfapps.io –n <app_name>-new`
+
 * Where `<app_name>` is the app name recorded in step 1.  
 
 ![Un-mapping an app route in PCF](images/cf-unmap-route.png)
