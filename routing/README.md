@@ -18,13 +18,13 @@ Steps
 
   * Where <app_name> is the app name recorded in step 1.  
 	
-  ![Mapping an app route in PCF](images/cf-map-route.png)
+    ![Mapping an app route in PCF](images/cf-map-route.png)
 
 3. Verify the new URL route was created in the space.  You should see the new host domain combination listed
 
   * `cf routes`
 
-  ![Listing Routes in PCF](images/cf-routes.png)
+    ![Listing Routes in PCF](images/cf-routes.png)
 
 4. Open a browser and navigate to the application using the new URL route.
 
@@ -34,7 +34,7 @@ Steps
 
   * Where `<app_name>` is the app name recorded in step 1.  
 
-  ![Un-mapping an app route in PCF](images/cf-unmap-route.png)
+    ![Un-mapping an app route in PCF](images/cf-unmap-route.png)
  
 6.List the routes for the space
 
@@ -42,7 +42,7 @@ Steps
  
   * The route still exists because we have unmapped the route, but not deleted the route, so it is reserved for our future use.
 
-  ![Listing Routes in PCF](images/cf-routes-2.png)
+    ![Listing Routes in PCF](images/cf-routes-2.png)
 
 7.Attempt to map a route to a reserved URL 
 
@@ -50,7 +50,7 @@ Steps
 
   * You will see this fails as this has already been reserved.
  
-  ![Reserved Routes in PCF](images/cf-route-reserved.png)
+    ![Reserved Routes in PCF](images/cf-route-reserved.png)
 
 8. Delete the route (this will also unmap the route)
 
@@ -58,7 +58,7 @@ Steps
 
   * When prompted confirm you want to delete the route.  
 
-  ![Delete Routes in PCF](images/cf-delete-route.png)
+    ![Delete Routes in PCF](images/cf-delete-route.png)
  
 9. Verify the route has been deleted
 

@@ -26,7 +26,7 @@ Steps
 
     * Notice the details environment variables
  
-    ![PCF app env details](images/env.png)
+      ![PCF app env details](images/env.png)
 
   5. Get information about deployed app using CLI command
 
@@ -36,7 +36,7 @@ Steps
 
     * `cf marketplace` or the shortened version `cf m`
 
-    ![PCF marketplace](images/marketplace.png)
+      ![PCF marketplace](images/marketplace.png)
 
   7. Create a new database service. Choose the “elephantsql” as the service, “turtle” as the plan and name the Service “CFW-psql”
 
@@ -48,7 +48,7 @@ Steps
  
     * You should see the service you just created listed.  It should not be bound to any applications.
 
-    ![PCF services](images/services.png)
+      ![PCF services](images/services.png)
 
   9. Bind the service to the deployed application
 
@@ -66,10 +66,10 @@ Steps
 
     * `cf restart <app_name>`
 
-    ![restarting PCF app](images/restart.png)
+      ![restarting PCF app](images/restart.png)
 
   12. After application restarts open a browser and navigate to the application.  The path to the application is supplied in a message similar to the following: urls: ssmith-CFW.cfapps.io
 
     * Notice the environment variables including the details of the bound service.
 
-    ![new PCF env](images/new-env.png)
+      ![new PCF env](images/new-env.png)
