@@ -42,7 +42,7 @@ Steps
  
     * Mousing over will show the connected services (in this case oracle-db)
 
-    * [Confirm Spring Music Datasource](images/header-confirm.png)
+    * ![Confirm Spring Music Datasource](images/header-confirm.png)
  
   8. Stop your spring music application
 
