@@ -12,7 +12,7 @@ Goals
 
   2.	Obtain information about Oracle service from your instructor.  This will take the form of
 
-    * oracle://<uid>:<pwd>@<host>:<port>/<db>
+    * `oracle://<uid>:<pwd>@<host>:<port>/<db>`
 
 Steps
 
@@ -41,6 +41,8 @@ Steps
   7. Mouse over the “i" in the header to confirm your service configuration
  
     * Mousing over will show the connected services (in this case oracle-db)
+
+    * [Confirm Spring Music Datasource](images/header-confirm.png)
  
   8. Stop your spring music application
 

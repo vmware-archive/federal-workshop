@@ -24,32 +24,33 @@ Steps
  
     * View the tailed log:
 
-    #0  /logs/stdout.log  INFO : com.gopivotal.cf.workshop.web.CloudFoundryWorkshopController - Current date and time = [01/17/2014 4:01 AM], port = [64969].
-
-    #0  /logs/stdout.log  INFO : com.gopivotal.cf.workshop.web.CloudFoundryWorkshopController - Current date and time = [01/17/2014 4:02 AM], port = [64969].
-
   3. View the failure events for the application:
 
     * `cf events`
 
-    Getting events for cf-workshop-spring-mvc... OK
-
-    time                        instance index  description          exit status  
-    2014-01-02T15:08:41+00:00   0               app instance exited  Failure(148)
-    2014-01-02T15:09:01+00:00   0               app instance exited  Failure(148)
-    2014-01-02T15:09:41+00:00   0               app instance exited  Failure(148)
-
   4. scp the log files to your local filesystem for viewing / archiving:
+
+    * Check to see if ssh is enabled (it is disabled by default in PWS).
 
     * `cf ssh-enabled cf-workshop-spring-mvc`
 
+    * Enable ssh
+
     * `cf ssh-enable cf-workshop-spring-mvc`
+
+    * Ssh to the app container via "cf ssh" then exit.
 
     * `cf ssh cf-workshop-spring-mvc`
 
+    * Get a one-time password for ssh
+
     * `cf ssh-code cf-workshop-spring-mvc`
+
+    * Get the Global Unique Identifier for your app
 
     * `cf app cf-workshop-spring-mvc --guid`
 
-    * `scp -p 2222 -o User=cf:$(cf app cf-workshop-spring-mvc --guid)/0 ssh.run.pivotal.io:staging_info.yml`staging_info.yml`
+    * Scp the remote file (staging_info.yml) to your host.  
+
+    * `scp -p 2222 -o User=cf:<app-guid>/0 ssh.run.pivotal.io:staging_info.yml`staging_info.yml`
 
