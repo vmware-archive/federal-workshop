@@ -15,6 +15,6 @@ Steps
 
 3.  Now view the application in a browser.  The result of the cf push will tell you the URL to use (see the urls parameter).
  
-![Output from cf push cmd](images/cf-push-output.png)
+![Output from cf push cmd](images/cf-push.png)
 
 
