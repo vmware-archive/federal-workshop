@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
-    <%= csrf_meta_tag %>
-    <%= render 'layouts/stylesheets' %>
-    <%= javascript_include_tag :defaults %>
+    <title>Rails App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <%= favicon_link_tag       '/shortcut-icon.png', type: 'image/png' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    '/pui-3.0.0/pivotal-ui.min.css', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    '/font-mfizz-2.3.0/font-mfizz.css', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
   </head>
-  <body>
-    <div class="container">
-      <%= render 'layouts/header' %>
-      <section class="round">
-        <% flash.each do |key, value| %>
-          <div class="flash <%= key %>"><%= value %></div>
-        <% end %>
+  <body class="bg-neutral-11">
+    <div class="container pan">
+      <section class="header">
+        <%= render partial: 'partials/header' %>
+      </section>
+      <section class="content">
         <%= yield %>
       </section>
-      <%= render 'layouts/footer' %>
-      <%= debug(params) if Rails.env.development? %>
+      <section>
+        <%= render partial: 'partials/footer' %>
+      </section>
     </div>
   </body>
 </html>
