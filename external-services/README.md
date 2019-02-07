@@ -20,7 +20,7 @@ Steps
 
   1. Create the Oracle service.  Note that "cups" is short for "create user provided service."  The '-p "uri"' tells the cf CLI that we will be passing a parameter called uri as input
 
-    * `cf cups oracle-db –p 'uri'`
+    * `cf cups oracle-db -p 'uri'`
 
     * `uri>oracle://<username>:<password>@<host>:<port>/<db>`
 
