@@ -1,0 +1,15 @@
+resources:
+- name: git-repo
+  type: git
+  source:
+    uri: {{GIT_REPO}}
+    branch: master
+    private_key: {{GIT_PRIVATE_KEY}}
+
+jobs:
+  - name: update-buildpack
+    plan:
+    - get: git-repo
+      trigger: true
+    - task: unit
+      file: git-repo/ci/tasks/apply-buildpack-update.yml
