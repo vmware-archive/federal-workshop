@@ -37,7 +37,7 @@ sendgrid         free, bronze, silver, gold, platinum                           
 Choose a PostgreSQL service from the list and create a service instance named `rails-postgres` using a PostgreSQL service and plan: 
 
 ~~~
-$ cf create-service SERVICE PLAN rails-postgres
+$ cf create-service <service> <plan> rails-postgres
 Creating service rails-postgres
 OK
 ~~~
@@ -45,7 +45,7 @@ OK
 Now push the application: 
 
 ~~~
-$ cf push APP-NAME --random-route
+$ cf push <app-name> --random-route
 Using manifest file manifest.yml
 
 Updating app rails-sample
